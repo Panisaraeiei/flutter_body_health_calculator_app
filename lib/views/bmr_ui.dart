@@ -228,7 +228,7 @@ class _BmrUiState extends State<BmrUi> {
                           style: TextStyle(
                             fontSize: 40,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xFFAB80BF),
+                            color: Color.fromARGB(255, 0, 8, 9),
                           ),
                         ),
                         SizedBox(height: 10),

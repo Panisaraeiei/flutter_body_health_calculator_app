@@ -85,7 +85,7 @@ class _BmiUiState extends State<BmiUi> {
                     if (wCtrl.text.isEmpty || hCtrl.text.isEmpty) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
-                          content: Text('กรุณากรอกนข้อมูลให้ครบถ้วน'),
+                          content: Text('กรุณากรอกข้อมูลให้ครบถ้วน'),
                           backgroundColor: Color.fromARGB(255, 191, 128, 128),
                           duration: Duration(seconds: 2),
                         ),
@@ -168,7 +168,7 @@ class _BmiUiState extends State<BmiUi> {
                           style: TextStyle(
                             fontSize: 40,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xFFAB80BF),
+                            color: Color.fromARGB(255, 6, 0, 9),
                           ),
                         )
                       ],

@@ -26,7 +26,7 @@ class _HomeUiState extends State<HomeUi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFAB80BF),
+        backgroundColor: Color.fromARGB(255, 233, 152, 210),
         title: Text(
           'Body Health Calculator',
           style: TextStyle(color: Colors.white),
@@ -40,7 +40,7 @@ class _HomeUiState extends State<HomeUi> {
           });
         },
         currentIndex: currentIndexStatus,
-        selectedItemColor: Color(0xFFAB80BF),
+        selectedItemColor: Color.fromARGB(255, 144, 156, 248),
         items: [
           BottomNavigationBarItem(
             icon: Icon(

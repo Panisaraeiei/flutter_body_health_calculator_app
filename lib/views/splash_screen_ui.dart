@@ -32,7 +32,7 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 179, 109, 154),
+      backgroundColor: Color.fromARGB(255, 239, 182, 219),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -51,14 +51,14 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
               style: TextStyle(
                 fontSize: MediaQuery.of(context).size.height * 0.025,
                 fontWeight: FontWeight.bold,
-                color: const Color.fromARGB(255, 122, 173, 180),
+                color: const Color.fromARGB(255, 0, 14, 15),
               ),
             ),
             SizedBox(
               height: 50.0,
             ),
             CircularProgressIndicator(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 255, 255, 255),
             ),
           ],
         ),

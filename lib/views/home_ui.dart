@@ -12,10 +12,10 @@ class HomeUi extends StatefulWidget {
 }
 
 class _HomeUiState extends State<HomeUi> {
-  //สร้างตัวแปรควบคุม currenindex ของ BarItem
-  int currenIndexStatus = 1;
+  //สร้างด้วยตัวแปรควบคุม currentIndex ของ barItem
+  int currentIndexStatus = 1;
 
-  //สร้างตัวแปรที่ Widget หน้าจอที่จะมาแสดง body ของ scaffold
+  //สร้างตัวแปลเก็บ widget หน้าจอที่จะมาแสดงที่ body ของ Scaffold
   List<Widget> showBody = [
     BmiUi(),
     AboutUi(),
@@ -26,42 +26,43 @@ class _HomeUiState extends State<HomeUi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 9, 82, 116),
+        backgroundColor: Color(0xFFAB80BF),
         title: Text(
           'Body Health Calculator',
-          style: TextStyle(
-            color: Colors.white,
-          ),
+          style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (value) {
           setState(() {
-            currenIndexStatus = value;
+            currentIndexStatus = value;
           });
         },
-        currentIndex: currenIndexStatus,
-        selectedItemColor: Colors.pink,
+        currentIndex: currentIndexStatus,
+        selectedItemColor: Color(0xFFAB80BF),
         items: [
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_3,
-              ),
-              label: 'BMI'),
+            icon: Icon(
+              Icons.person_3,
+            ),
+            label: 'BMI',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: 'Home'),
+            icon: Icon(
+              Icons.home,
+            ),
+            label: 'Home',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(
-                FontAwesomeIcons.personBooth,
-              ),
-              label: 'BMR'),
+            icon: Icon(
+              FontAwesomeIcons.personBooth,
+            ),
+            label: 'BMR',
+          ),
         ],
       ),
-      body: showBody[currenIndexStatus],
+      body: showBody[currentIndexStatus],
     );
   }
 }

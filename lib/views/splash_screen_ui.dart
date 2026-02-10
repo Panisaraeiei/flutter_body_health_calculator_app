@@ -11,11 +11,11 @@ class SplashScreenUi extends StatefulWidget {
 class _SplashScreenUiState extends State<SplashScreenUi> {
   @override
   void initState() {
-    //ให้หน่สงเวลา 3 วินาทีแล้วเปิดหน้า Homeui แบบย้อนกลับไม่ได้
+    // ให้หน่วงเวลา 3 วินาทีแล้วเปิดหน้าถ HomeUi แบบย้อนกลับไม่ได้
     Future.delayed(
       //เวลาที่หน่วง
       Duration(seconds: 2),
-      //เมื่อครบเวลาแล้วจะให้ทำอะไร ณ ที่นี้จะเปิดหน้า homeui แบบย้อนกลับไม่ได้
+      //เมื่อครบเวลาให้ไปหน้า HomeUi
       () {
         Navigator.pushReplacement(
           context,
@@ -32,7 +32,7 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFED9DEA),
+      backgroundColor: Color.fromARGB(255, 179, 109, 154),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +51,7 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
               style: TextStyle(
                 fontSize: MediaQuery.of(context).size.height * 0.025,
                 fontWeight: FontWeight.bold,
-                color: Colors.white,
+                color: const Color.fromARGB(255, 122, 173, 180),
               ),
             ),
             SizedBox(
